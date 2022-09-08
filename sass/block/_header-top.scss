@@ -1,0 +1,23 @@
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 113px 0 49px;
+    background: $background-color2;
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    &__tel {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1.36;
+        letter-spacing: 0.2px;
+        color: $color-primary;
+    }
+}
