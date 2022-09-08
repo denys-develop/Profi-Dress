@@ -30,7 +30,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 113px 0 49px;
+  padding: 55px 0 50px;
   background: #F0F1F6;
 }
 .header-top__contacts {
@@ -48,25 +48,35 @@ body {
 }
 
 .header-content {
-  padding: 49px 0 208px;
-  background: #F0F1F6;
+  padding: 50px 0 180px;
+  background-color: #F0F1F6;
   position: relative;
   z-index: 1;
 }
 .header-content::before {
   content: "";
   display: block;
-  width: 900px;
-  height: 700px;
-  background-image: url(/img/header/header-bg.png);
-  background-repeat: no-repeat;
+  width: 836px;
+  height: 689px;
+  background: url(/img/header/header-bg-2.png) bottom right no-repeat;
   position: absolute;
-  bottom: -10px;
+  bottom: 0px;
   right: -388px;
   z-index: -1;
 }
+.header-content::after {
+  content: "";
+  display: block;
+  width: 486px;
+  height: 800px;
+  background: url(/img/header/header-bg-1.png) bottom right no-repeat;
+  position: absolute;
+  bottom: -110px;
+  right: 30px;
+  z-index: -1;
+}
 .header-content__info {
-  max-width: 680px;
+  max-width: 650px;
 }
 .header-content__title {
   margin-bottom: 31px;
@@ -82,24 +92,23 @@ body {
   margin-top: 65px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 45px;
+  column-gap: 25px;
   row-gap: 32px;
 }
 .header-content__about-item {
   display: flex;
   align-items: center;
-  column-gap: 25px;
+  column-gap: 20px;
 }
 .header-content__about-item-img {
   width: 46px;
 }
 .header-content__about-item-img img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .header-content__about-item-desc {
-  width: 245px;
+  width: 240px;
   font-family: "Georgia", sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -150,7 +159,7 @@ body {
   background-color: transparent;
   color: #A65E34;
   border: 3.5px solid #A65E34;
-  transition: background-color 0.1s ease-out, color 0.2s ease-out, transform 0.1s ease-out;
+  transition: background-color 0.1s ease-out, transform 0.1s ease-out, color 0.2s ease-out;
 }
 .button__catalog:hover {
   background-color: #A65E34;
@@ -158,6 +167,10 @@ body {
 }
 .button__catalog:active {
   transform: translateY(1px);
+}
+
+.header {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

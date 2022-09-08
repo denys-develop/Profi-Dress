@@ -48,7 +48,7 @@
     color: $color-primary;
     border: 3.5px solid $color-primary;
 
-    transition: background-color .1s ease-out, color .2s ease-out, transform .1s ease-out;
+    transition: background-color .1s ease-out, transform .1s ease-out, color .2s ease-out;
 
     &:hover {
         background-color: $color-bg-btn1;
