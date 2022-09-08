@@ -4,6 +4,8 @@
     color: $color-text-btn;
     font-weight: 600;
 
+    text-align: center;
+
     transition: background-color .2s ease-out, transform .1s ease-out;
 
 
@@ -42,6 +44,18 @@
 
     &:active {
         transform: translateY(1px);
+    }
+
+    &--free-products {
+        background-color: $color-bg-btn2;
+        padding: 24px 69px;
+        font-size: 28px;
+        line-height: 1.39;
+        letter-spacing: 0.546644px;
+
+        &:hover {
+            background-color: $color-bg-btn1
+        }
     }
 }
 

@@ -1,0 +1,45 @@
+.free-products {
+    padding: 86px 0;
+    color: $color1;
+    background-blend-mode: multiply;
+    background-image: url(/img/free-products/free-product.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(32, 31, 31, 0.6);
+   
+
+    &__content {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    &__title {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 1.35;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+
+        span {
+            color: $color7;
+        }
+    }
+
+    &__desc {
+        margin-bottom: 65px;
+        font-size: 23px;
+        line-height: 1.347;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
