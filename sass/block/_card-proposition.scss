@@ -1,0 +1,23 @@
+.proposition__card {
+    text-align: center;
+
+    &-img {
+        margin-bottom: 33px;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: 0.173374px;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
+

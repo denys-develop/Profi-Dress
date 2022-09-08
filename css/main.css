@@ -141,6 +141,13 @@ body {
   background-image: url(/img/header/header-icons/tel.svg);
   background-repeat: no-repeat;
 }
+.button--proposition {
+  padding: 16px 15px;
+  width: 237px;
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 0.373707px;
+}
 .button:hover {
   background-color: #D28E67;
 }
@@ -170,6 +177,34 @@ body {
 .header {
   overflow: hidden;
   background-color: #F0F1F6;
+}
+
+.proposition {
+  padding: 114px 0 200px;
+}
+.proposition__heading {
+  margin-bottom: 73px;
+}
+.proposition__cards {
+  display: flex;
+  column-gap: 35px;
+}
+
+.proposition__card {
+  text-align: center;
+}
+.proposition__card-img {
+  margin-bottom: 33px;
+}
+.proposition__card-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.173374px;
+  text-transform: uppercase;
+  color: #A65E34;
+  margin-bottom: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

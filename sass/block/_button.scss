@@ -28,6 +28,14 @@
         }
     }
 
+    &--proposition {
+        padding: 16px 15px;
+        width: 237px;
+        font-size: 20px;
+        line-height: 1.35;
+        letter-spacing: 0.373707px;
+    }
+
     &:hover {
         background-color: $color-bg-btn2;
     }
