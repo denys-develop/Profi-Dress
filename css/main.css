@@ -2,7 +2,7 @@
 @import "/fonts/Georgia/stylesheet.css";
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #F0F1F6;
+  background-color: #FFFFFF;
   color: #212121;
 }
 
@@ -31,7 +31,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 55px 0 50px;
-  background: #F0F1F6;
 }
 .header-top__contacts {
   display: flex;
@@ -49,7 +48,6 @@ body {
 
 .header-content {
   padding: 50px 0 180px;
-  background-color: #F0F1F6;
   position: relative;
   z-index: 1;
 }
@@ -171,6 +169,7 @@ body {
 
 .header {
   overflow: hidden;
+  background-color: #F0F1F6;
 }
 
 /*# sourceMappingURL=main.css.map */
