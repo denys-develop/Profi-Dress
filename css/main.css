@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@600;700;800&display=swap");
+@import "/fonts/Georgia/stylesheet.css";
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #F0F1F6;
+  color: #212121;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #A65E34;
+}
+
+/*# sourceMappingURL=main.css.map */
