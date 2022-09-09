@@ -1,0 +1,41 @@
+.products-guests {
+    padding: 88px 0 79px;
+    background: #EAEAEB;
+    width: 100%;
+
+    &__content {
+        max-width: 945px;
+        margin: 0 auto;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 33px;
+    
+        p {
+            font-family: $font1;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.2px;
+            color: $color3;
+        }
+    }
+
+    &__title {
+        max-width: 920px;
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 1.1;
+        letter-spacing: 0.2px;
+        color: #A65E34;
+        margin-bottom: 29px;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
