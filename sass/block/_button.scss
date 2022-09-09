@@ -38,6 +38,12 @@
         letter-spacing: 0.373707px;
     }
 
+
+    &--card-products {
+        padding: 11px 0;
+        width: 142px;
+    }
+
     &:hover {
         background-color: $color-bg-btn2;
     }
@@ -58,6 +64,8 @@
         }
     }
 }
+
+
 
 
 .button__catalog {
