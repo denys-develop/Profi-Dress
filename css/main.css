@@ -153,6 +153,12 @@ body {
   padding: 11px 0;
   width: 142px;
 }
+.button--form-order {
+  padding: 24px 105px;
+  font-size: 28px;
+  line-height: 1.39;
+  letter-spacing: 0.546644px;
+}
 .button:hover {
   background-color: #D28E67;
 }
@@ -312,6 +318,40 @@ body {
   justify-content: center;
   column-gap: 32px;
   row-gap: 36px;
+}
+
+.form-order__label {
+  display: block;
+  margin-bottom: 12px;
+}
+.form-order__input {
+  width: 361px;
+  height: 87px;
+  background: #FFFFFF;
+  padding: 24px 21px;
+  font-size: 28px;
+  line-height: 1.39;
+  margin-right: 30px;
+}
+
+.products-order {
+  padding: 94px 0 121px;
+  background: linear-gradient(90.24deg, #F0F1F6 60.32%, rgba(217, 217, 217, 0) 106.67%), url(/img/product-order/bg.jpg) 780px 0 no-repeat;
+}
+.products-order__content {
+  max-width: 755px;
+}
+.products-order__heading {
+  margin-bottom: 10px;
+}
+.products-order .products-order__title {
+  font-family: "Georgia", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.13;
+  letter-spacing: 1.04574px;
+  text-transform: uppercase;
+  color: #A65E34;
 }
 
 /*# sourceMappingURL=main.css.map */

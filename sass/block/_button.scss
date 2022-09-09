@@ -44,6 +44,14 @@
         width: 142px;
     }
 
+
+    &--form-order {
+        padding: 24px 105px;
+        font-size: 28px;
+        line-height: 1.39;
+        letter-spacing: 0.546644px;
+    }
+
     &:hover {
         background-color: $color-bg-btn2;
     }
