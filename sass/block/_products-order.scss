@@ -1,8 +1,11 @@
 .products-order {
     padding: 94px 0 121px;
-    background: linear-gradient(90.24deg, #F0F1F6 60.32%, rgba(217, 217, 217, 0) 106.67%), 
-    url(/img/product-order/bg.jpg) 780px 0 no-repeat;
-   
+    position: relative;
+    z-index: 1000;
+    background-blend-mode:normal;
+    background: linear-gradient(90.24deg, #F0F1F6 45.32%, rgba(217, 217, 217, 0) 90.67%), url(/img/product-order/bg.jpg) 710px 0;
+    background-repeat: no-repeat;
+
     &__content {
         max-width: 755px;
     }
