@@ -1,0 +1,111 @@
+.about {
+    padding: 192px 0 256px;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+    }
+
+    &__item-left {
+        max-width: 558px;
+    }
+
+    &__item-right {
+        max-width: 597px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    &__title {
+        font-family: $font2;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.14;
+        letter-spacing: 1.13882px;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 6px;
+    }
+
+    &__desc {
+        p {
+            font-size: 21px;
+            line-height: 1.19;
+            letter-spacing: 0.207607px;
+            color: $color4;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        column-gap: 33px;
+    }
+
+   &__info-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        width: 60px;
+        height: 60px;
+    }
+
+
+    &__info-title {
+        width: 100%;
+        font-family: $font1;
+        font-weight: 700;
+        font-size: 22.7698px;
+        line-height: 1.156;
+        letter-spacing: 0.252997px;
+        color: $color2;
+    }
+}
+
+
+.about__bottom {
+    margin-top: 140px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &-item {
+
+        .about__bottom-title--width {
+            width: 298px;
+            text-align: left;
+        }
+    
+        span {
+            margin-top: 3px;
+            display: block;
+            font-family: $font1;
+            font-weight: 400;
+            font-size: 20.1037px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.251296px;
+            color: $color3;
+        }
+    }
+
+
+    &-title {
+        font-family: $font1;
+        font-weight: 900;
+        font-size: 30.1555px;
+        line-height: 36px;
+        letter-spacing: 0.251296px;
+        color: $color-primary;
+        text-align: center;
+    }
+}
+
+
+
