@@ -1,0 +1,70 @@
+.founder {
+    padding: 88px 0 190px;
+}
+
+.founder__row {
+    display: flex;
+    align-items: center;
+}
+
+.founder__text {
+    max-width: 550px;
+    position: relative;
+}
+
+.founder__desc {
+    width: 594px;
+    background: #F1F1F1;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px 50px 50px 55px;
+
+    position: absolute;
+    top: 90px;
+    left: -40px;
+    
+    p {
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        color: $color5;
+    }
+}
+
+.founder__symbol {
+    position: absolute;
+    top: -295px;
+    right: -20px;
+
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 314px;
+    line-height: 357px;
+    letter-spacing: 1.3969px;
+    text-transform: uppercase;
+    color: $color-primary;
+
+}
+
+.founder__name {
+    padding-top: 530px;
+    margin-left: 56px;
+
+    p {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: $color5;
+        margin-top: 5px;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: $color5;
+    }
+}
