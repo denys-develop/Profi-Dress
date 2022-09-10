@@ -510,6 +510,21 @@ body {
   right: -650px;
 }
 
+.products-guests__patern--bottom::before {
+  width: 517px;
+  height: 412px;
+  background-image: url(/img/products-guests/patern-3.png);
+  bottom: -210px;
+  left: -540px;
+}
+.products-guests__patern--bottom::after {
+  width: 523px;
+  height: 430px;
+  background-image: url(/img/products-guests/patern-4.png);
+  top: -200px;
+  right: -580px;
+}
+
 .reviews {
   padding: 184px 0 92px;
 }
