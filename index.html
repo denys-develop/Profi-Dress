@@ -7,9 +7,11 @@
     <title>Profi Dress</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header hide">
+    <header class="header">
         <div class="container">
             <div class="header-top">
                 <div class="logo">
@@ -71,7 +73,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="proposition hide">
+        <section class="proposition">
             <div class="container">
                 <div class="proposition__heading">
                     <h2 class="title">Что вы можете заказать у нас</h2>
@@ -101,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="free-products hide">
+        <section class="free-products">
             <div class="container">
                 <div class="free-products__content">
                     <h2 class="free-products__title">получите образцы нашей продукции <span>бесплатно</span></h2>
@@ -112,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <section class="products-card hide">
+        <section class="products-card">
             <div class="container">
                 <div class="products-card__row">
                     <div class="card-product">
@@ -260,7 +262,7 @@
                 </div>
             </div>
         </section>
-        <section class="about hide">
+        <section class="about">
             <div class="container">
                 <div class="about__row">
                     <div class="about__item-left">
@@ -317,7 +319,7 @@
                 </div>
             </div>
         </section>
-        <section class="products-guests hide">
+        <section class="products-guests">
             <div class="container">
                 <div class="products-guests__content products-guests__patern products-guests__patern--top">
                     <div class="products-guests__heading">
@@ -329,6 +331,70 @@
                             <input type="tel" name="tel" id="tel" class="form-order__input" placeholder="+7 (___) ___-__-__" required>
                             <button type="submit" class="button button--form-order">Заказать</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__heading">
+                    <h2 class="title">Что о нас говорят клиенты</h2>
+                </div>
+                <div class="slider">
+                    <div class="owl-carousel owl-theme">
+                        <div class="slider__item slide">
+                            <div class="slide__symbol"><p>„</p></div>
+                            <div class="slide__rank">
+                                <ul>
+                                    <li><img src="./img/reviews/star-1.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-1.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-1.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-1.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-1.svg" alt="star-rank"></li>
+                                </ul>
+                            </div>
+                            <div class="slide__text">
+                                <p>
+                                    “Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, 
+                                    aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”
+                                </p>
+                            </div>
+                            <div class="slide__avatar">
+                                <img class="slide__img" src="./img/reviews/avatar-1.png" alt="avatar">
+                                <span class="slide__name">Courtney Henry</span>
+                            </div>
+                        </div>
+                        <div class="slider__item slide">
+                            <div class="slide__symbol"><p>„</p></div>
+                            <div class="slide__rank">
+                                <ul>
+                                    <li><img src="./img/reviews/star-2.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-2.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-2.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-2.svg" alt="star-rank"></li>
+                                    <li><img src="./img/reviews/star-2.svg" alt="star-rank"></li>
+                                </ul>
+                            </div>
+                            <div class="slide__text">
+                                <p>
+                                    “Orci vel eget in eu. Integer amet porttitor hendrerit etiam arcu, 
+                                    aliquet duis pretium consequat. Semper sed viverra enim ut nunc.”
+                                </p>
+                            </div>
+                            <div class="slide__avatar">
+                                <img class="slide__img" src="./img/reviews/avatar-1.png" alt="avatar">
+                                <span class="slide__name">Courtney Henry</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owl-nav">
+                        <div class="owl-prev">
+                            <img src="./img/reviews/arrow-left.svg" alt="">
+                        </div>
+                        <div class="owl-next">
+                            <img src="./img/reviews/arrow-rigth.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -351,6 +417,10 @@
             </div>
         </section> -->
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
