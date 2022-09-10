@@ -623,4 +623,20 @@ body {
   row-gap: 17px;
 }
 
+.production-capacity {
+  padding: 75px 0 88px;
+}
+.production-capacity__heading {
+  margin-bottom: 79px;
+}
+.production-capacity__row {
+  display: flex;
+  column-gap: 26.3px;
+}
+.production-capacity__item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 26.3px;
+}
+
 /*# sourceMappingURL=main.css.map */

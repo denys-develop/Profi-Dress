@@ -1,0 +1,19 @@
+.production-capacity {
+    padding: 75px 0 88px;
+
+    &__heading {
+        margin-bottom: 79px;
+    }
+
+    &__row {
+        display: flex;
+        column-gap: 26.3px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 26.3px;
+    }
+}
+
