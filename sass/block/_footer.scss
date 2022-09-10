@@ -1,0 +1,53 @@
+.footer {
+    padding: 100px 0;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__copy {
+        display: flex;
+        column-gap: 36px;
+
+        li {
+            a {
+                font-family: $font1;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.21;
+                color: $color3;
+                transition: color .2s ease-out;
+
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+        transition: opacity .2s ease-out;
+
+        &:hover a {
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+
+
+

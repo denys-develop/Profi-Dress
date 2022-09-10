@@ -719,4 +719,42 @@ body {
   color: #757575;
 }
 
+.footer {
+  padding: 100px 0;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copy {
+  display: flex;
+  column-gap: 36px;
+}
+.footer__copy li a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #212121;
+  transition: color 0.2s ease-out;
+}
+.footer__copy li a:hover {
+  color: #A65E34;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  transition: opacity 0.2s ease-out;
+}
+.footer__icons:hover a {
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=main.css.map */
