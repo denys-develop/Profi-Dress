@@ -608,4 +608,19 @@ body {
   opacity: 0.8;
 }
 
+.partners {
+  padding: 92px 0 75px;
+}
+.partners__heading {
+  margin-bottom: 41px;
+}
+.partners__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 70px;
+  row-gap: 17px;
+}
+
 /*# sourceMappingURL=main.css.map */

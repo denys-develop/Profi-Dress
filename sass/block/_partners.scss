@@ -1,0 +1,16 @@
+.partners {
+    padding: 92px 0 75px;
+
+    &__heading {
+        margin-bottom: 41px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 70px;
+        row-gap: 17px;
+    }
+}
