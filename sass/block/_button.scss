@@ -81,10 +81,11 @@
     padding: 17px 43px 18px 43px;
     font-size: 22px;
     line-height: 1.36;
-    letter-spacing: 0.410715px;
+    letter-spacing: 0.4px;
     background-color: transparent;
     color: $color-primary;
     border: 3.5px solid $color-primary;
+    text-decoration: none;
 
     transition: background-color .1s ease-out, transform .1s ease-out, color .2s ease-out;
 
