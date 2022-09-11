@@ -19,7 +19,7 @@
                 </div>
                 <div class="header-top__contacts">
                     <a class="header-top__tel" href="tel:88002221024">8 800 222 10 24</a>
-                    <button type="button" class="button button--tel">Заказать звонок</button>
+                    <button data-modal-button="modal-tel" type="button" class="button button--tel">Заказать звонок</button>
                 </div>
             </div>
             <div class="header-content">
@@ -84,21 +84,21 @@
                             <img src="img/proposition/proposition-1.jpg" alt="foto-proposition">
                         </div>
                         <div class="proposition__card-title">Махровые халаты</div>
-                        <button type="button" class="button button--proposition">Заказать</button>
+                        <button data-modal-button="modal-order" type="button" class="button button--proposition">Заказать</button>
                     </div>
                     <div class="proposition__card">
                         <div class="proposition__card-img">
                             <img src="img/proposition/proposition-2.jpg" alt="foto-proposition">
                         </div>
                         <div class="proposition__card-title">Махровые полотенца</div>
-                        <button type="button" class="button button--proposition">Заказать</button>
+                        <button data-modal-button="modal-order" type="button" class="button button--proposition">Заказать</button>
                     </div>
                     <div class="proposition__card">
                         <div class="proposition__card-img">
                             <img src="img/proposition/proposition-3.jpg" alt="foto-proposition">
                         </div>
                         <div class="proposition__card-title">Kоврики для ног</div>
-                        <button type="button" class="button button--proposition">Заказать</button>
+                        <button data-modal-button="modal-order" type="button" class="button button--proposition">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
                                 <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -153,8 +153,8 @@
                                 <div class="card-product__price">
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
-                                <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                <div data-modal-button="modal-1" class="card-product__btn">
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
                                 <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
                                 <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
                                 <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                                     <p>ОТ 100000 Руб.</p>
                                 </div>
                                 <div class="card-product__btn">
-                                    <button type="button" class="button button--card-products">Заказать</button>
+                                    <button data-modal-button="modal-order" type="button" class="button button--card-products">Заказать</button>
                                 </div>
                             </div>
                         </div>
@@ -501,8 +501,39 @@
             </div>
         </div>
     </footer>
-   
 
+    <div class="modals">
+        <div id="modal-order" data-modal class="fade-block hide" >
+            <div class="modal-window">
+                <div class="card">
+                    <h3 class="card__title">Вас заинтересовал товар:</h3>
+                    <div class="card__desc"><p>Название товара</p></div>
+    
+                    <form class="form-order form--modal">
+                        <div class="form-order__desc">
+                            <p>
+                                Напишите свой номер телефона, чтобы получить индивидуальный расчёт в течение 30 минут.
+                            </p>
+                        </div>
+                        <input type="tel" name="tel" id="tel" class="form-order__input" placeholder="+7 (___) ___-__-__" required>
+                        <button type="submit" class="button button--form-order">Получить расчёт</button>
+                        <label for="checkbox" class="form-order__checkbox-text"> 
+                            <input type="checkbox" id="checkbox" required class="form-order__checkbox">
+                            <p>
+                                оставляя заявку вы соглашаетесь с нашей
+                                политикой обработки персональных данных
+                            </p>
+                        </label>
+                    </form>
+    
+                    <!-- <button data-modal-close type="button" class="button">
+                        Закрыть окно
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
