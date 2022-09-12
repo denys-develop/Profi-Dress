@@ -34,4 +34,8 @@ body {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     color: $color-primary;
+
+    @media (max-width: 428px) {
+        font-size: 26px;
+    }
 }

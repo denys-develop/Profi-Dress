@@ -3,6 +3,10 @@
 
     &-img {
         margin-bottom: 33px;
+
+        @media (max-width: 428px) {
+            margin-bottom: 21px;
+        }
     }
 
     &-title {
@@ -14,6 +18,11 @@
         text-transform: uppercase;
         color: $color-primary;
         margin-bottom: 16px;
+
+        @media (max-width: 428px) {
+            font-size: 22px;
+            margin-bottom: 14px;
+        }
     }
 }
 

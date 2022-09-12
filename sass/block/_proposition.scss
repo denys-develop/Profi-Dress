@@ -1,13 +1,24 @@
 .proposition {
     padding: 114px 0 200px;
 
+    @media (max-width: 428px) {
+        padding: 104px 0 110px;
+    }
+
     &__heading {
         margin-bottom: 73px;
+
+        @media (max-width: 428px) {
+           margin-bottom: 53px;
+        }
     }
 
     &__cards {
         display: flex;
-        column-gap: 35px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
     }
 }
 
