@@ -28,6 +28,12 @@
             background-image: url(/img/header/header-icons/tel.svg);
             background-repeat: no-repeat;
         }
+
+        @media (max-width:428px) {
+            width: 122.5px;
+            font-size: 9px;
+            padding: 6px 7px;
+        }
     }
 
     &--proposition {
@@ -52,6 +58,17 @@
         letter-spacing: 0.546644px;
     }
 
+    &--hide {
+        display: none;
+        width: 166px;
+        padding: 11px 10px;
+        font-size: 12px;
+
+        @media (max-width:428px) {
+            display: block;
+        }
+    }
+ 
     &:hover {
         background-color: $color-bg-btn2;
     }
@@ -96,5 +113,12 @@
 
     &:active {
         transform: translateY(1px);
+    }
+
+    @media (max-width:428px) {
+       width: 166px;
+       padding: 11.5px 14.5px;
+       border: 1.7754px solid #A65E34;
+       font-size: 12px;
     }
 }

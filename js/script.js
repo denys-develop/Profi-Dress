@@ -24,6 +24,9 @@ const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
 const allModals = document.querySelectorAll('[data-modal]');
 const body = document.body;
 
+const modalBany = document.querySelector('[modal-bany]');
+
+
 // Кнопки открыть модалку
 modalButtons.forEach(function(item) {
     item.addEventListener('click', function() {
@@ -31,7 +34,7 @@ modalButtons.forEach(function(item) {
         const modal = document.querySelector('#' + modalId);
         modal.classList.remove('hide');
         body.classList.add('no-scroll');
-
+        
         // Находим внутри открываемой модалки блок .modal-window и запрещаем ему передавать клики "наверх"
         modal.querySelector('.modal-window').addEventListener('click', function (event) {
             event.stopPropagation();

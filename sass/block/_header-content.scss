@@ -1,20 +1,35 @@
 .header-content {
-    padding: 50px 0 180px;
+    padding: 50px 0 208px;
     position: relative;
     z-index: 1;
 
-    &::before {
+    @media (max-width:428px) {
+        padding: 40px 0 350px 0;
+    }
+
+    &::before { 
         content: "";
         display: block;
         width: 836px;
         height: 689px;
 
         background: url(/img/header/header-bg-2.png) bottom right no-repeat;
+        background-size: contain;
 
         position: absolute;
         bottom: 0px;
         right: -388px;
         z-index: -1;
+
+
+        @media (max-width:428px) {
+            width: 395px;
+            height: 395px;
+
+            bottom: -65px;
+            right: -65px;
+        }
+
     }
 
     &::after {
@@ -23,12 +38,21 @@
         width: 486px;
         height: 800px;
 
-        background: url(/img/header/header-bg-1.png) bottom right no-repeat;
+        background: url(/img/header/header-bg-1.png) bottom right no-repeat;    
+        background-size: contain;
 
         position: absolute;
         bottom: -110px;
         right: 30px;
         z-index: -1;
+
+        @media (max-width:428px) {
+            width: 251px;
+            height: 416px;
+
+            bottom: -85px;
+            left: -35px;
+        }
     }
 
     &__info {
@@ -44,6 +68,15 @@
         letter-spacing: 1.02664px;
         text-transform: uppercase;
         color: $color-title;
+
+        @media (max-width:428px) {
+            font-size: 25px;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__about {
@@ -53,7 +86,15 @@
         flex-wrap: wrap;
         column-gap: 25px;
         row-gap: 32px;
+
+        @media (max-width:428px) {
+            margin-top: 40px;
+            row-gap: 16px;
+            column-gap: 30px;
+        }
     }
+
+
 
     &__about-item {
         display: flex;
@@ -62,6 +103,7 @@
 
         &-img {
             width: 46px;
+            height: 46px;
 
             img {
                 display: block;
@@ -70,14 +112,20 @@
         }
 
         &-desc {
-            width: 240px;
-            font-family: $font2;
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 1.13;
-            letter-spacing: 0.9px;
-            text-transform: uppercase;
-            color:$color-primary;
+            p {
+                width: 240px;
+                font-family: $font2;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 1.13;
+                letter-spacing: 0.9px;
+                text-transform: uppercase;
+                color:$color-primary;
+
+                @media (max-width:428px) {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
