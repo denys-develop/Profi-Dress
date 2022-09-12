@@ -92,6 +92,12 @@
         &:hover {
             background-color: $color-bg-btn1
         }
+
+        @media (max-width: 428px) {
+           width: 166px;
+           padding: 11.5px 18.5px;
+           font-size: 12px;
+        }
     }
 }
 

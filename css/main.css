@@ -275,6 +275,13 @@ body {
 .button--free-products:hover {
   background-color: #A65E34;
 }
+@media (max-width: 428px) {
+  .button--free-products {
+    width: 166px;
+    padding: 11.5px 18.5px;
+    font-size: 12px;
+  }
+}
 
 .button__catalog {
   display: inline-block;
@@ -365,15 +372,26 @@ body {
   padding: 86px 0;
   color: #FFFFFF;
   background-blend-mode: multiply;
+  background-color: rgba(32, 31, 31, 0.6);
   background-image: url(/img/free-products/free-product.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(32, 31, 31, 0.6);
+}
+@media (max-width: 428px) {
+  .free-products {
+    padding: 64px 0 65px;
+    background-image: url(/img/free-products/bg-mobile.jpg);
+  }
 }
 .free-products__content {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 428px) {
+  .free-products__content {
+    max-width: 345px;
+  }
 }
 .free-products__title {
   font-weight: 800;
@@ -387,6 +405,12 @@ body {
 .free-products__title span {
   color: #FFB359;
 }
+@media (max-width: 428px) {
+  .free-products__title {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+}
 .free-products__desc {
   margin-bottom: 65px;
   font-size: 23px;
@@ -394,6 +418,12 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   text-transform: uppercase;
+}
+@media (max-width: 428px) {
+  .free-products__desc {
+    font-size: 10px;
+    margin-bottom: 16px;
+  }
 }
 
 .card-product {

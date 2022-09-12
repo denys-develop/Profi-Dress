@@ -1,17 +1,29 @@
 .free-products {
     padding: 86px 0;
     color: $color1;
+
     background-blend-mode: multiply;
+    background-color: rgba(32, 31, 31, 0.6);
+
     background-image: url(/img/free-products/free-product.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(32, 31, 31, 0.6);
+   
+
+    @media (max-width: 428px) {
+        padding: 64px 0 65px;
+        background-image: url(/img/free-products/bg-mobile.jpg);
+    }
    
 
     &__content {
         max-width: 700px;
         margin: 0 auto;
         text-align: center;
+
+        @media (max-width: 428px) {
+            max-width: 345px;
+        }
     }
 
 
@@ -27,6 +39,11 @@
         span {
             color: $color7;
         }
+
+        @media (max-width: 428px) {
+           font-size: 22px;
+           margin-bottom: 6px;
+        }
     }
 
     &__desc {
@@ -36,6 +53,11 @@
         text-align: center;
         letter-spacing: 0.2px;
         text-transform: uppercase;
+
+        @media (max-width: 428px) {
+            font-size: 10px;
+            margin-bottom: 16px;
+        }
     }
 }
 
