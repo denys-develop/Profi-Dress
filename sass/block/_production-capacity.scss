@@ -1,19 +1,64 @@
 .production-capacity {
     padding: 75px 0 88px;
 
+    @media (max-width: 428px) {
+      padding: 50px 0 60px;
+    }
+
     &__heading {
         margin-bottom: 79px;
+
+        @media (max-width: 428px) {
+            margin-bottom: 39px;
+        }
     }
 
     &__row {
         display: flex;
+        justify-content: space-between;
         column-gap: 26.3px;
+
+        @media (max-width: 428px) {
+            flex-direction: column;
+            row-gap: 14px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        column-gap: 26.3px;
+
+        @media (max-width: 428px) {
+            column-gap: 13px;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         row-gap: 26.3px;
+
+        @media (max-width: 428px) {
+            row-gap: 13px;
+        }
+    }
+
+    &__item--big {
+        width: 395px;
+        height: 526px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 428px) {
+            width: 100%;
+            height: 196px;
+        }
     }
 }
 
