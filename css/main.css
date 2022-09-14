@@ -828,12 +828,30 @@ body {
   bottom: -210px;
   left: -540px;
 }
+@media (max-width: 428px) {
+  .products-guests__patern--bottom::before {
+    width: 145px;
+    height: 130px;
+    background-size: cover;
+    top: -135px;
+    left: -60px;
+  }
+}
 .products-guests__patern--bottom::after {
   width: 523px;
   height: 430px;
   background-image: url(/img/products-guests/patern-4.png);
   top: -200px;
   right: -580px;
+}
+@media (max-width: 428px) {
+  .products-guests__patern--bottom::after {
+    width: 170px;
+    height: 130px;
+    background-size: cover;
+    top: -141px;
+    right: -72px;
+  }
 }
 
 .reviews {
@@ -1104,7 +1122,7 @@ body {
 }
 @media (max-width: 428px) {
   .founder {
-    padding: 63px 0 70px;
+    padding: 63px 0 135px;
   }
 }
 

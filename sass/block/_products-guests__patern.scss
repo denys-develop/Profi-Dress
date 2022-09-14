@@ -58,6 +58,15 @@
         background-image: url(/img/products-guests/patern-3.png);
         bottom: -210px;
         left: -540px;
+
+
+        @media (max-width:428px) {
+            width: 145px;
+            height: 130px;
+            background-size: cover;
+            top: -135px;
+            left: -60px;
+        }
     }
 
     &::after {
@@ -66,5 +75,14 @@
         background-image: url(/img/products-guests/patern-4.png);
         top: -200px;
         right: -580px;
+
+
+        @media (max-width:428px) {
+            width: 170px;
+            height: 130px;
+            background-size: cover;
+            top: -141px;
+            right: -72px;
+        }
     }
 }
