@@ -1102,10 +1102,20 @@ body {
 .founder {
   padding: 88px 0 190px;
 }
+@media (max-width: 428px) {
+  .founder {
+    padding: 63px 0 70px;
+  }
+}
 
 .founder__row {
   display: flex;
   align-items: center;
+}
+@media (max-width: 428px) {
+  .founder__row {
+    flex-direction: column;
+  }
 }
 
 .founder__text {
@@ -1122,11 +1132,24 @@ body {
   top: 90px;
   left: -40px;
 }
+@media (max-width: 428px) {
+  .founder__desc {
+    width: 302px;
+    padding: 15px 26px;
+    top: -30px;
+    left: -90px;
+  }
+}
 .founder__desc p {
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.2px;
   color: #757575;
+}
+@media (max-width: 428px) {
+  .founder__desc p {
+    font-size: 10px;
+  }
 }
 
 .founder__symbol {
@@ -1141,10 +1164,23 @@ body {
   text-transform: uppercase;
   color: #A65E34;
 }
+@media (max-width: 428px) {
+  .founder__symbol {
+    font-size: 160px;
+    top: -240px;
+    right: -10px;
+  }
+}
 
 .founder__name {
   padding-top: 530px;
   margin-left: 56px;
+}
+@media (max-width: 428px) {
+  .founder__name {
+    padding-top: 165px;
+    margin-left: -90px;
+  }
 }
 .founder__name p {
   font-weight: 800;
@@ -1155,6 +1191,11 @@ body {
   color: #757575;
   margin-top: 5px;
 }
+@media (max-width: 428px) {
+  .founder__name p {
+    font-size: 12px;
+  }
+}
 .founder__name span {
   font-weight: 400;
   font-size: 20px;
@@ -1162,6 +1203,11 @@ body {
   letter-spacing: 0.2px;
   text-transform: capitalize;
   color: #757575;
+}
+@media (max-width: 428px) {
+  .founder__name span {
+    font-size: 10px;
+  }
 }
 
 .footer {

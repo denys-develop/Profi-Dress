@@ -1,15 +1,25 @@
 .founder {
     padding: 88px 0 190px;
+
+    @media (max-width: 428px) {
+        padding: 63px 0 70px;
+    }
 }
 
 .founder__row {
     display: flex;
     align-items: center;
+
+    @media (max-width: 428px) {
+        flex-direction: column;
+        
+    }
 }
 
 .founder__text {
     max-width: 550px;
     position: relative;
+
 }
 
 .founder__desc {
@@ -21,12 +31,23 @@
     position: absolute;
     top: 90px;
     left: -40px;
+
+    @media (max-width: 428px) {
+        width: 302px;
+        padding: 15px 26px;
+        top: -30px;
+        left: -90px;
+    }
     
     p {
         font-size: 20px;
         line-height: 1.4;
         letter-spacing: 0.2px;
         color: $color5;
+
+        @media (max-width: 428px) {
+            font-size: 10px;
+        }
     }
 }
 
@@ -43,11 +64,23 @@
     text-transform: uppercase;
     color: $color-primary;
 
+    @media (max-width: 428px) {
+        font-size: 160px;
+
+        top: -240px;
+        right: -10px;
+    }
+
 }
 
 .founder__name {
     padding-top: 530px;
     margin-left: 56px;
+
+    @media (max-width: 428px) {
+        padding-top: 165px;
+        margin-left: -90px;
+    }
 
     p {
         font-weight: 800;
@@ -57,6 +90,10 @@
         text-transform: capitalize;
         color: $color5;
         margin-top: 5px;
+
+        @media (max-width: 428px) {
+            font-size: 12px;
+        }
     }
 
     span {
@@ -66,5 +103,9 @@
         letter-spacing: 0.2px;
         text-transform: capitalize;
         color: $color5;
+
+        @media (max-width: 428px) {
+            font-size: 10px;
+        }
     }
 }
