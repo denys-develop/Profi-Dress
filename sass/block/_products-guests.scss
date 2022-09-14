@@ -3,6 +3,10 @@
     background: #EAEAEB;
     width: 100%;
 
+    @media (max-width: 428px) {
+        padding: 82px 0 45px;
+    }
+
     &__content {
         max-width: 945px;
         margin: 0 auto;
@@ -11,6 +15,10 @@
     &__heading {
         text-align: center;
         margin-bottom: 33px;
+
+        @media (max-width:428px) {
+           margin-bottom: 17px;
+        }
     
         p {
             font-family: $font1;
@@ -19,6 +27,12 @@
             line-height: 1.2;
             letter-spacing: 0.2px;
             color: $color3;
+
+            @media (max-width:428px) {
+                max-width: 310px;
+                font-size: 11px;
+                margin: 0 auto;
+            }
         }
     }
 
@@ -30,6 +44,11 @@
         letter-spacing: 0.2px;
         color: #A65E34;
         margin-bottom: 29px;
+
+        @media (max-width:428px) {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
     }
 
     &__form {

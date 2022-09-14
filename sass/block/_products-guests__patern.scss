@@ -1,15 +1,16 @@
 .products-guests__patern {
     position: relative;
     z-index: 10;
-
+    
     &::before, &::after {
         content: "";
         display: block;
         position: absolute;
-        z-index: 20;
+        z-index: 200;
         background-repeat: no-repeat;
         filter: drop-shadow(0px 18.2235px 45.5588px rgba(0, 0, 0, 0.1));
     }
+    
 }
 
 .products-guests__patern--top {
@@ -19,7 +20,16 @@
         background-image: url(/img/products-guests/patern-1.png);
         top: -187px;
         left: -400px;
-        
+       
+
+        @media (max-width:428px) {
+            width: 150px;
+            height: 145px;
+            background-size: cover;
+            transform: scale(-1, 1);
+            top: -155px;
+            left: -55px;
+        }
     }
 
     &::after {
@@ -28,6 +38,16 @@
         background-image: url(/img/products-guests/patern-2.png);
         top: -230px;
         right: -650px;
+
+
+        @media (max-width:428px) {
+            width: 170px;
+            height: 190px;
+            transform: scale(-1, 1);
+            background-size: cover;
+            top: -225px;
+            right: -100px;
+        }
     }
 }
 

@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Open+Sans:wght@600;700;800&display=swap");
 @import "/fonts/Georgia/stylesheet.css";
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #FFFFFF;
   color: #212121;
   overflow-x: hidden;
+  z-index: 10;
 }
 
 .container {
@@ -714,6 +719,11 @@ body {
   background: #EAEAEB;
   width: 100%;
 }
+@media (max-width: 428px) {
+  .products-guests {
+    padding: 82px 0 45px;
+  }
+}
 .products-guests__content {
   max-width: 945px;
   margin: 0 auto;
@@ -721,6 +731,11 @@ body {
 .products-guests__heading {
   text-align: center;
   margin-bottom: 33px;
+}
+@media (max-width: 428px) {
+  .products-guests__heading {
+    margin-bottom: 17px;
+  }
 }
 .products-guests__heading p {
   font-family: "Inter", sans-serif;
@@ -730,6 +745,13 @@ body {
   letter-spacing: 0.2px;
   color: #212121;
 }
+@media (max-width: 428px) {
+  .products-guests__heading p {
+    max-width: 310px;
+    font-size: 11px;
+    margin: 0 auto;
+  }
+}
 .products-guests__title {
   max-width: 920px;
   font-weight: 800;
@@ -738,6 +760,12 @@ body {
   letter-spacing: 0.2px;
   color: #A65E34;
   margin-bottom: 29px;
+}
+@media (max-width: 428px) {
+  .products-guests__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
 }
 .products-guests__form {
   display: flex;
@@ -753,7 +781,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  z-index: 20;
+  z-index: 200;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 18.2235px 45.5588px rgba(0, 0, 0, 0.1));
 }
@@ -765,12 +793,32 @@ body {
   top: -187px;
   left: -400px;
 }
+@media (max-width: 428px) {
+  .products-guests__patern--top::before {
+    width: 150px;
+    height: 145px;
+    background-size: cover;
+    transform: scale(-1, 1);
+    top: -155px;
+    left: -55px;
+  }
+}
 .products-guests__patern--top::after {
   width: 599px;
   height: 728px;
   background-image: url(/img/products-guests/patern-2.png);
   top: -230px;
   right: -650px;
+}
+@media (max-width: 428px) {
+  .products-guests__patern--top::after {
+    width: 170px;
+    height: 190px;
+    transform: scale(-1, 1);
+    background-size: cover;
+    top: -225px;
+    right: -100px;
+  }
 }
 
 .products-guests__patern--bottom::before {
