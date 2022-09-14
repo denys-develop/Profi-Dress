@@ -1,8 +1,18 @@
 .partners {
     padding: 92px 0 75px;
+    
+
+    @media (max-width: 428px) {
+       padding: 50px 0 50px;
+       
+    }
 
     &__heading {
         margin-bottom: 41px;
+
+        @media (max-width: 428px) {
+            margin-bottom: 34px;
+        }
     }
 
     &__row {
@@ -12,5 +22,10 @@
         align-items: center;
         column-gap: 70px;
         row-gap: 17px;
+
+        @media (max-width: 428px) {
+            gap: 15px;
+        }
     }
+
 }

@@ -841,7 +841,7 @@ body {
 }
 @media (max-width: 428px) {
   .reviews {
-    padding: 105px 0;
+    padding: 105px 0 50px;
   }
 }
 
@@ -1008,8 +1008,18 @@ body {
 .partners {
   padding: 92px 0 75px;
 }
+@media (max-width: 428px) {
+  .partners {
+    padding: 50px 0 50px;
+  }
+}
 .partners__heading {
   margin-bottom: 41px;
+}
+@media (max-width: 428px) {
+  .partners__heading {
+    margin-bottom: 34px;
+  }
 }
 .partners__row {
   display: flex;
@@ -1018,6 +1028,11 @@ body {
   align-items: center;
   column-gap: 70px;
   row-gap: 17px;
+}
+@media (max-width: 428px) {
+  .partners__row {
+    gap: 15px;
+  }
 }
 
 .production-capacity {
