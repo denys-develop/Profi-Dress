@@ -7,6 +7,14 @@
         justify-content: center;
         column-gap: 32px;
         row-gap: 36px;
+
+        // @media (max-width: 428px) {
+        
+        // }
+
+    }
+
+    @media (max-width: 428px) {
+        padding: 100px 0;
     }
 }
-

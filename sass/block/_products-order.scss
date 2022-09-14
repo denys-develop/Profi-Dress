@@ -3,8 +3,14 @@
     position: relative;
     z-index: 1000;
     background-blend-mode:normal;
-    background: linear-gradient(90.24deg, #F0F1F6 45.32%, rgba(217, 217, 217, 0) 90.67%), url(/img/product-order/bg.jpg) 710px 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(90.24deg, #F0F1F6 45.32%, rgba(217, 217, 217, 0) 90.67%), url(/img/product-order/bg.jpg) 710px 0px no-repeat;
+    background-size: cover;
+
+    @media (max-width: 428px) {
+        padding: 29px 0 32px;
+        background: linear-gradient(90.24deg, #F0F1F6 70.32%, rgba(217, 217, 217, 0) 106.67%), url(/img/product-order/bg-mobile.jpeg) 200px 0 no-repeat;
+        background-size: contain;
+    }
 
     &__content {
         max-width: 755px;
@@ -22,5 +28,9 @@
         letter-spacing: 1.04574px;
         text-transform: uppercase;
         color: $color-primary;
+
+        @media (max-width: 428px) {
+            font-size: 22px;
+        }
     }
 }

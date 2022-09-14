@@ -1,4 +1,13 @@
 .form-order {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 30px;
+
+    @media (max-width: 428px) {
+        flex-direction: column; 
+        row-gap: 17px;
+    }
+
     &__label {
         display: block;
         margin-bottom: 12px;
@@ -11,7 +20,12 @@
         padding: 24px 21px; 
         font-size: 28px;
         line-height: 1.39;
-        margin-right: 30px;
+
+        @media (max-width: 428px) {
+            height: 45px;
+            font-size: 18px;
+            padding: 10px 10px; 
+        }
     }
 }
 

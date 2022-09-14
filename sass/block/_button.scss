@@ -57,10 +57,18 @@
 
 
     &--form-order {
-        padding: 24px 105px;
+        width: 361px;
+        height: 87px;
+        padding: 24px 0;
         font-size: 28px;
         line-height: 1.39;
         letter-spacing: 0.546644px;
+
+        @media (max-width: 428px) {
+            height: 45px;
+            padding: 11px 0;
+            font-size: 16px;
+        }
     }
 
     &--hide {
