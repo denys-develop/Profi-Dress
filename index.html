@@ -28,7 +28,7 @@
                     <h1 class="header-content__title">Махровые изделия для гостиниц оптом со скидкой до 50%</h1>
                     <div class="header-content__btn">
                         <a href="#!" class="button__catalog">Посмотреть каталог</a>
-                        <button type="button" class="button button--hide">Заказать</button>
+                        <button data-modal-button="modal-order" type="button" class="button button--hide">Заказать</button>
                     </div>
                     <div class="header-content__about">
                         <div class="header-content__about-item">
@@ -76,8 +76,7 @@
             </div>
         </div>
     </header>
-
-    <div class="main">
+    <main class="main">
         <section class="proposition">
             <div class="container">
                 <div class="proposition__heading">
@@ -535,8 +534,7 @@
                 </div>
             </div>
         </section>
-    </div>
-
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__row">
@@ -560,25 +558,30 @@
         <div id="modal-order" data-modal class="fade-block hide" >
             <div class="modal-window">
                 <div class="card">
-                    <h3 class="card__title">Вас заинтересовал товар:</h3>
-                    <div class="card__desc"><p>Название товара</p></div>
-    
-                    <form class="form-order form--modal">
-                        <div class="form-order__desc">
-                            <p>
-                                Напишите свой номер телефона, чтобы получить индивидуальный расчёт в течение 30 минут.
+                    <div class="card__heading">
+                        <h3 class="card__title">Вас заинтересовал товар:</h3>
+                        <div class="card__desc"><p>Название товара</p></div>
+                    </div>
+                
+                    <form class="form-modal">
+                        <div class="form-modal__text">
+                            <p>Напишите свой номер телефона, чтобы получить индивидуальный расчёт в течение 30 минут.</p>
+                        </div>
+
+                        <div class="form-modal__item">
+                            <input type="tel" name="tel" class="form-modal__input" placeholder="+7 (999) 999 99 99" required>
+                        </div>
+        
+                        <button type="submit" class="button button--form-modal">Получить расчёт</button>
+
+                        <div class="form-modal__check">
+                            <input type="checkbox" name="checkbox" class="form-modal__checkbox" required>
+                            <p class="form-modal__check-copy">оставляя заявку вы соглашаетесь с нашей
+                                <a href="#!" class="form-modal__check-link">политикой обработки персональных данных</a>
                             </p>
                         </div>
-                        <input type="tel" name="tel" id="tel" class="form-order__input" placeholder="+7 (___) ___-__-__" required>
-                        <button type="submit" class="button button--form-order">Получить расчёт</button>
-                        <label for="checkbox" class="form-order__checkbox-text"> 
-                            <input type="checkbox" id="checkbox" required class="form-order__checkbox">
-                            <p>
-                                оставляя заявку вы соглашаетесь с нашей
-                                политикой обработки персональных данных
-                            </p>
-                        </label>
                     </form>
+                    
     
                     <!-- <button data-modal-close type="button" class="button">
                         Закрыть окно
@@ -590,22 +593,24 @@
             <div class="modal-window">
                 <div class="card card-tel">
                     <h3 class="card__title">Заказать звонок</h3>
+                    
+                    <form class="form-modal">
+                        <div class="form-modal__text">
+                            <p>Напишите свой номер телефона, чтобы получить индивидуальный расчёт в течение 30 минут.</p>
+                        </div>
+
+                        <div class="form-modal__item">
+                            <input type="tel" name="tel" class="form-modal__input" placeholder="+7 (999) 999 99 99" required>
+                        </div>
         
-                    <form class="form-order form--modal">
-                        <div class="form-order__desc">
-                            <p>
-                                Напишите свой номер телефона, <br> мы перезвоним в течение 30 минут.
+                        <button type="submit" class="button button--form-modal">Заказать звонок</button>
+
+                        <div class="form-modal__check">
+                            <input type="checkbox" name="checkbox" class="form-modal__checkbox" required>
+                            <p class="form-modal__check-copy">оставляя заявку вы соглашаетесь с нашей
+                                <a href="#!" class="form-modal__check-link">политикой обработки персональных данных</a>
                             </p>
                         </div>
-                        <input type="tel" name="tel" id="tel" class="form-order__input" placeholder="+7 (___) ___-__-__" required>
-                        <button type="submit" class="button button--form-order">Получить расчёт</button>
-                        <label for="checkbox" class="form-order__checkbox-text"> 
-                            <input type="checkbox" id="checkbox" required class="form-order__checkbox">
-                            <p>
-                                оставляя заявку вы соглашаетесь с нашей
-                                политикой обработки персональных данных
-                            </p>
-                        </label>
                     </form>
                 </div>
             </div>

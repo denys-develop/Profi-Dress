@@ -27,23 +27,44 @@
     background: #FFFFFF;
     box-shadow: 0px 11px 10px rgba(0, 0, 0, 0.3);
 
+    @media (max-width: 428px) {
+        width: 362px;
+        min-height: 300px;
+        padding: 15px 34px;
+        text-align: left;
+    }
+
+    &__heading {
+        margin-bottom: 20px;
+
+        @media (max-width: 428px) {
+           margin-bottom: 15px;
+        }
+    }
+
     &__title {
         font-weight: 700;
         font-size: 30px;
         line-height: 1.36;
         color: $color-primary;
         margin-bottom: 10px;
-    }
 
-    .card__desc {
-        p {
-            font-weight: 600;
-            font-size: 22px;
-            margin-bottom: 20px;
+        @media (max-width: 428px) {
+           font-size: 18px;
+           margin-bottom: 5px;
         }
     }
 
-   
+    &__desc {
+        p {
+            font-weight: 600;
+            font-size: 22px;
+
+            @media (max-width: 428px) {
+                font-size: 15px;
+            }
+        }
+    }
 }
 
 .card-tel {
@@ -52,52 +73,3 @@
     border-radius: 10px;
 }
 
-
-.form--modal {
-    .form-order__desc {
-        p {
-            font-weight: 600;
-            font-size: 14px;
-            color: #212121;
-            margin-bottom: 10px;
-        }
-    }
-
-    .form-order__input {
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        height: 40px;
-        padding: 10px 12px;
-        font-weight: 400;
-        font-size: 18px;
-        border: 1px solid #000000;
-        margin-bottom: 10px;
-    }
-
-
-    .button--form-order {
-        width: 80%;
-        padding: 10px 0;
-        font-weight: 400;
-        font-size: 14px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-    }
-
-    .form-order__checkbox-text {
-        margin-top: 10px;
-        display: flex;
-        column-gap: 8px;
-        padding: 0 40px;
-
-        p {
-            font-weight: 400;
-            font-size: 14px;
-            text-align: left;
-            color: #000000;
-            line-height: 1.2;
-        }
-    }
-}
