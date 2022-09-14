@@ -839,14 +839,29 @@ body {
 .reviews {
   padding: 184px 0 92px;
 }
+@media (max-width: 428px) {
+  .reviews {
+    padding: 105px 0;
+  }
+}
 
 .reviews__heading {
   margin-bottom: 81px;
 }
+@media (max-width: 428px) {
+  .reviews__heading {
+    margin-bottom: 33px;
+  }
+}
 
 .slider {
-  min-height: 300px;
+  height: 300px;
   position: relative;
+}
+@media (max-width: 428px) {
+  .slider {
+    height: 262px;
+  }
 }
 .slider__item {
   padding: 56px 40px 30px 40px;
@@ -854,6 +869,11 @@ body {
   background-color: #F0F0F0;
   border: 2px solid #A65E34;
   text-align: center;
+}
+@media (max-width: 428px) {
+  .slider__item {
+    padding: 40px 28px;
+  }
 }
 
 .slide {
@@ -865,6 +885,11 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 428px) {
+  .slide__symbol {
+    top: -81px;
+  }
+}
 .slide__symbol p {
   font-family: "Georgia", sans-serif;
   font-weight: 400;
@@ -874,6 +899,11 @@ body {
   letter-spacing: 0.762152px;
   text-transform: uppercase;
   color: #A65E34;
+}
+@media (max-width: 428px) {
+  .slide__symbol p {
+    font-size: 111px;
+  }
 }
 .slide__rank {
   margin-bottom: 19px;
@@ -887,6 +917,11 @@ body {
 .slide__text {
   margin-bottom: 32px;
 }
+@media (max-width: 428px) {
+  .slide__text {
+    margin-bottom: 20px;
+  }
+}
 .slide__text p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -895,10 +930,21 @@ body {
   letter-spacing: 0.246957px;
   color: #212121;
 }
+@media (max-width: 428px) {
+  .slide__text p {
+    font-size: 10px;
+  }
+}
 .slide__img {
   width: 40px !important;
   height: 40px !important;
   margin: 0 auto;
+}
+@media (max-width: 428px) {
+  .slide__img {
+    width: 25px !important;
+    height: 25px !important;
+  }
 }
 .slide__name {
   display: block;
@@ -911,6 +957,11 @@ body {
   text-transform: capitalize;
   color: #757575;
 }
+@media (max-width: 428px) {
+  .slide__name {
+    font-size: 9px;
+  }
+}
 
 .owl-prev {
   position: absolute;
@@ -921,6 +972,11 @@ body {
 }
 .owl-prev:hover {
   opacity: 0.8;
+}
+@media (max-width: 428px) {
+  .owl-prev {
+    display: none;
+  }
 }
 
 .owl-next {
@@ -933,7 +989,22 @@ body {
 .owl-next:hover {
   opacity: 0.8;
 }
+@media (max-width: 428px) {
+  .owl-next {
+    display: none;
+  }
+}
 
+@media (max-width: 428px) {
+  .slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #A65E34;
+  }
+  .slider .owl-theme .owl-dots .owl-dot span {
+    width: 39px;
+    height: 4.35px;
+    border-radius: 2.6px;
+  }
+}
 .partners {
   padding: 92px 0 75px;
 }

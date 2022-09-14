@@ -1,6 +1,11 @@
 .slider {
-    min-height: 300px;
+    height: 300px;
     position: relative;
+
+
+    @media (max-width: 428px) {
+       height: 262px;
+    }
 
     &__item {
         padding: 56px 40px 30px 40px;
@@ -8,6 +13,10 @@
         background-color: #F0F0F0;
         border: 2px solid #A65E34;
         text-align: center;
+
+        @media (max-width: 428px) {
+            padding: 40px 28px;
+        }
     }
 }
 
@@ -21,6 +30,10 @@
         top: -134px;
         left: 50%;
         transform: translateX(-50%);
+
+        @media (max-width: 428px) {
+            top: -81px;
+        }
        
     
         p {
@@ -32,6 +45,10 @@
             letter-spacing: 0.762152px;
             text-transform: uppercase;
             color: $color-primary;
+
+            @media (max-width: 428px) {
+                font-size: 111px;
+            }
         }
     }
 
@@ -48,6 +65,10 @@
 
     &__text {
         margin-bottom: 32px;
+
+        @media (max-width: 428px) {
+            margin-bottom: 20px;
+        }
     
         p {
             font-family: $font1;
@@ -56,6 +77,10 @@
             line-height: 1.18;
             letter-spacing: 0.246957px;
             color: $color3;
+
+            @media (max-width: 428px) {
+                font-size: 10px;
+            }
         }
     }
 
@@ -63,6 +88,11 @@
         width: 40px !important;
         height: 40px !important;
         margin: 0 auto;
+
+        @media (max-width: 428px) {
+            width: 25px !important;
+            height: 25px !important;
+        }
     }
 
     &__name {
@@ -75,7 +105,12 @@
         letter-spacing: 0.2px;
         text-transform: capitalize;
         color: $color5;
+
+        @media (max-width: 428px) {
+            font-size: 9px;
+        }
     }
+   
 }
 
 .owl-prev {
@@ -87,6 +122,10 @@
 
     &:hover {
         opacity: 0.8;
+    }
+
+    @media (max-width: 428px) {
+       display: none;
     }
 }
 
@@ -100,4 +139,27 @@
     &:hover {
         opacity: 0.8;
     }
+
+    @media (max-width: 428px) {
+        display: none;
+    }
 }
+
+@media (max-width: 428px) {
+    .slider .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #A65E34;
+    }
+
+    .slider .owl-theme .owl-dots .owl-dot span {
+        width: 39px;
+        height: 4.35px;
+        border-radius: 2.6px;
+    }
+}
+
+
+
+
+
+
+

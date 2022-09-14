@@ -1,7 +1,15 @@
 .reviews {
     padding: 184px 0 92px;
+
+    @media (max-width: 428px) {
+        padding: 105px 0;
+    }
 }
 
 .reviews__heading {
     margin-bottom: 81px;
+
+    @media (max-width: 428px) {
+        margin-bottom: 33px;
+    }
 }

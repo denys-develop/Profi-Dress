@@ -1,9 +1,27 @@
 // Owl Carousel
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        items: 2,
-        loop: true,
-        margin: 50
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                loop: true,
+                dots: true,
+            },
+            428:{
+                items:1,
+                nav:false,
+                loop: true,
+                dots: true,
+            },
+            1000:{
+                items:2,
+                margin: 50,
+                loop:true,
+                dots: false,
+                margin: 50
+            }
+        }
     });
 });
 
