@@ -1,10 +1,19 @@
 .about {
     padding: 192px 0 256px;
 
+    @media (max-width: 428px) {
+        padding: 108px 0 88px;
+    }
+
     &__row {
         display: flex;
         align-items: center;
         column-gap: 30px;
+
+        @media (max-width: 428px) {
+            flex-direction: column;
+            row-gap: 17px;
+        }
     }
 
     &__item-left {
@@ -16,6 +25,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 24px;
+
+        @media (max-width: 428px) {
+           row-gap: 12px;
+        }
     }
 
     &__title {
@@ -27,6 +40,12 @@
         text-transform: uppercase;
         color: $color-primary;
         margin-bottom: 6px;
+
+        @media (max-width: 428px) {
+           font-size: 25px;
+           text-align: center;
+           margin-bottom: 11px;
+        }
     }
 
     &__desc {
@@ -35,6 +54,11 @@
             line-height: 1.19;
             letter-spacing: 0.207607px;
             color: $color4;
+
+            @media (max-width: 428px) {
+                font-size: 13px;
+                text-align: center;
+            }
         }
     }
 
@@ -42,6 +66,10 @@
         display: flex;
         align-items: center;
         column-gap: 33px;
+
+        @media (max-width: 428px) {
+           column-gap: 22px;
+        }
     }
 
    &__info-img {
@@ -62,6 +90,10 @@
         line-height: 1.156;
         letter-spacing: 0.252997px;
         color: $color2;
+
+        @media (max-width: 428px) {
+           font-size: 14px;
+        }
     }
 }
 
@@ -69,9 +101,20 @@
 .about__bottom {
     margin-top: 140px;
 
+    @media (max-width: 428px) {
+        margin-top: 56px;
+    }
+
     &-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 428px) {
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           row-gap: 35px;
+        }
     }
 
 
@@ -80,6 +123,11 @@
         .about__bottom-title--width {
             width: 298px;
             text-align: left;
+
+            @media (max-width: 428px) {
+                text-align: center;
+                font-size: 25px;
+            }
         }
     
         span {
@@ -93,8 +141,9 @@
             letter-spacing: 0.251296px;
             color: $color3;
         }
-    }
 
+       
+    }
 
     &-title {
         font-family: $font1;
