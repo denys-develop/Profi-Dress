@@ -1,23 +1,37 @@
 .footer {
     padding: 100px 0;
 
-    &__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    @media (max-width: 428px) {
+       padding: 31px 0;
     }
 
     &__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &--logo {
+        @media (max-width: 428px) {
+            width: 84px;
+            height: 15.5px;
+        }
     }
 
     &__copy {
         display: flex;
+        align-items: center;
         column-gap: 36px;
 
+        @media (max-width: 428px) {
+            column-gap: 22px;
+        }
+
         li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             a {
                 font-family: $font1;
                 font-weight: 500;
@@ -29,6 +43,10 @@
                 &:hover {
                     color: $color-primary;
                 }
+
+                @media (max-width: 428px) {
+                    font-size: 6.5px;
+                }
             }
         }
     }
@@ -36,11 +54,29 @@
     &__icons {
         display: flex;
         align-items: center;
+        justify-content: center;
         column-gap: 15px;
         transition: opacity .2s ease-out;
 
+        @media (max-width: 428px) {
+            column-gap: 4px;
+        }
+
         &:hover a {
             opacity: 0.8;
+        }
+
+        @media (max-width: 428px) {
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 11px;
+                    height: 11px;
+                }
+            }
         }
     }
 }
